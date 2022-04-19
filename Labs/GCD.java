@@ -6,25 +6,26 @@
  * @4/19/2022
  */
 public class GCD
-{
-    public GCD()
+{ 
+    public static void main(String [] args)
     {
+        System.out.println(gcd(100,2)); 
     }
     
-    public static int gcd(int eins, int zwei)
+    public static int gcd(int num1, int num2)
     {
-        int lastNum = 0; 
-        if ((zwei<=eins)&&(zwei%eins==0)){
-            lastNum = zwei; 
+        int lastNum; 
+        if ((num2<=num1)&&(num2%num1==0)){
+            lastNum = num2; 
         }
-        else if (eins<zwei)
+        else if (num1<num2)
         {
-            lastNum = gcd(zwei, eins); 
+            lastNum = gcd(num2, num1); 
         }
         else
         {
-            lastNum = gcd(zwei, eins%zwei);  
-        }
+            lastNum = gcd(num2, num1%num2);  
+        } 
         return lastNum; 
     }
 }

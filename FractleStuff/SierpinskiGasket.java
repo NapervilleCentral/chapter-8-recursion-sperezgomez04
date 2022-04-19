@@ -75,8 +75,8 @@ public class SierpinskiGasket extends JPanel
         if (distance > 10)
         {
             //find midpoints and draw triangle
-            //int ABMidx = (xPos[0]
-            //int ABMidy = (
+            int ABMidx = ((xPos[0]+xPos[1])/2)
+            int ABMidy = (
             
             //draw the tri
             
