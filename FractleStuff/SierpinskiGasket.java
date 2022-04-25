@@ -110,17 +110,17 @@ public class SierpinskiGasket extends JPanel
             int right2y = ((yPos[0]+CAMidy)/2);
            
             
-            int[] topX = {topx, top2x, ABMidx2, topx}; 
-            int[] topY = {topy, top2y, ABMidy2, topy}; 
-            int[] leftX = {leftx, left2x, BCMidx2, leftx}; 
-            int[] leftY = {lefty, left2y, BCMidy2, lefty}; 
+            int[] topX = {topx, top2x, BCMidx2, topx}; 
+            int[] topY = {topy, top2y, BCMidy2, topy}; 
+            int[] leftX = {leftx, left2x, ABMidx2, leftx}; 
+            int[] leftY = {lefty, left2y, ABMidy2, lefty}; 
             int[] rightX = {rightx, right2x, CAMidx2, rightx}; 
             int[] rightY = {righty, right2y, CAMidy2, righty}; 
             //draw the tri
             page.setColor (Color.yellow);
-            page.drawPolyline (topX, topY, topX.length);
-            page.drawPolyline (leftX, leftY, leftX.length);
-            page.drawPolyline (rightX, rightY, rightX.length);
+            //page.drawPolyline (topX, topY, topX.length);
+            //page.drawPolyline (leftX, leftY, leftX.length);
+            //page.drawPolyline (rightX, rightY, rightX.length);
             
             
             //call the 3 new triangles
