@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=PinWordEnumerator
+comment0.text=\r\n\ \ \ Converts\ a\ numeric\ pin\ to\ an\ equivalent\ word\ using\ the\ digit\ to\r\n\ \ \ letter\ mapping\ on\ a\ standard\ telephone\ keypad.\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=n
+comment2.target=void\ enumerateWords(java.lang.String)
+comment2.text=\r\n\ \ \ \ \ \ \ A\ wrapper\ for\ a\ recursive\ method\ that\ enumerates\ all\ the\r\n\ \ \ \ \ \ \ phone\ keypad\ encodings\ for\ a\ number.\r\n\ \ \ \ \ \ \ @param\ n\ a\ string\ representing\ the\ number\r\n
+comment3.params=pin\ word
+comment3.target=void\ enumerateWords(java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ \ \ \ \ \ \ \ \ \ \ Recursively\ generates\ all\ possible\ 'words'\ that\ represent\r\n\ \ \ \ \ \ \ \ \ \ \ the\ telephone\ keypad\ encoding\ of\ a\ number.\r\n\ \ \ \ \ \ \ \ \ \ \ @param\ pin\ the\ number\r\n\ \ \ \ \ \ \ \ \ \ \ @param\ word\ representing\ the\ encoding\ a\ the\ pin\r\n
+numComments=4
