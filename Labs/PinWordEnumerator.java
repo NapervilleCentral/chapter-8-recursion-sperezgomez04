@@ -27,8 +27,9 @@ public class PinWordEnumerator
          // Implement a recursive method that generates
          // all possible phone keypad encodings for a
          // number. Implement additional auxiliary methods
-         // if necessary.
-    
+         // if necessary.  
+         String word = new String(""); 
+         enumerateWords(n,word); 
     }
 
     /**
@@ -39,7 +40,7 @@ public class PinWordEnumerator
          */
         public static void enumerateWords(String pin, String word)
         {
-            if (pin.length() == 0)
+            if (pin.length() == 1)
             {
                 System.out.printf("%s%n",word);
             }
@@ -48,13 +49,13 @@ public class PinWordEnumerator
                 String[] map = {"0","1","ABC","DEF","GHI","JKL","MNO","PQRS","TUV","WXYZ"};
                 int first = Integer.parseInt(pin.substring(0,1));
                 String rest = pin.substring(1,pin.length()-1); 
-                word += map[first-1]; 
-                for (int i = 0; i<rest.length(); i++)
-               {
-                   enumerateWords(rest,word);  
-            
+                for (int i = 0; i<map.length-1;i++)
+                {
+                    String enc = map[first]; 
+                    word += enc; 
+                    enumerateWords(word,rest); 
+                }
+                
                 }
             }
         }
-
-}
